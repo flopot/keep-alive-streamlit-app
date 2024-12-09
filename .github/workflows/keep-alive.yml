@@ -19,3 +19,4 @@ jobs:
       run: |
         docker build -t puppeteer-keep-alive .
         docker run --rm puppeteer-keep-alive
+
