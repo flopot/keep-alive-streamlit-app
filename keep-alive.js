@@ -3,7 +3,7 @@ const PAGE_LOAD_GRACE_PERIOD_MS = 20000; // Increased further to 20 sec
 const WAKE_UP_BUTTON_TEXT = "Yes, get this app back up!"; // Correct button text
 
 const urls = [
-  'https://bulk-serp-driven-seo-content-brief-generator.streamlit.app/',
+  'https://bulk-seo-content-brief-generator.streamlit.app/',
   'https://csv-merger.streamlit.app/',
   'https://semrush-keyword-gap-automation.streamlit.app/',
   'https://sitemaps-scraper.streamlit.app/',
