@@ -8,7 +8,8 @@ const urls = [
   'https://semrush-keyword-gap-automation.streamlit.app/',
   'https://sitemaps-scraper.streamlit.app/',
   'https://bulk-chatgpt.streamlit.app/',
-  'https://status-code-checker.streamlit.app/'
+  'https://status-code-checker.streamlit.app/',
+  'https://huggingface.co/spaces/Flopot2/keyword-clusterizer'
 ];
 
 (async () => {
