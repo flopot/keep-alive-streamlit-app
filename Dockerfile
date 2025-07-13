@@ -1,13 +1,9 @@
-# Image officielle Puppeteer (Chromium + toutes libs déjà installées)
+# Chromium + Puppeteer already pre-installed
 FROM ghcr.io/puppeteer/puppeteer:latest
 
 WORKDIR /app
 
-# Dép-instal : Puppeteer est déjà présent, on n’installe que nos dépendances éventuelles
-COPY package*.json ./
-RUN npm ci --omit=dev                # rapide, pas de download Chromium
-
-# Code source
-COPY . .
+# Only copy the script you need
+COPY keep-alive.js .
 
 CMD ["node", "keep-alive.js"]
