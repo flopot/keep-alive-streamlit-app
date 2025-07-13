@@ -2,21 +2,17 @@ name: Keep Streamlit Apps Awake
 
 on:
   schedule:
-    - cron: '*/60 * * * *'  # Runs every 60 minutes
+    - cron: '0 * * * *'   # every hour
+  workflow_dispatch:      # manual trigger
 
 jobs:
   keep-alive:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
-    - name: Set up Docker
-      uses: docker/setup-buildx-action@v1
-
-    - name: Build and run Puppeteer script
-      run: |
-        docker build -t puppeteer-keep-alive .
-        docker run --rm puppeteer-keep-alive
-
+      - name: Build and run Puppeteer script
+        run: |
+          docker build -t puppeteer-keep-alive .
+          docker run --rm puppeteer-keep-alive
