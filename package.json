@@ -7,6 +7,6 @@
     "start": "node keep-alive.js"
   },
   "dependencies": {
-    "puppeteer": "latest"
+    "puppeteer": "^22.8.2"
   }
 }
