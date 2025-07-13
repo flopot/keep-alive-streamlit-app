@@ -6,7 +6,7 @@ WORKDIR /app
 
 # Install dependencies
 COPY package*.json ./
-RUN npm install
+RUN npm install puppeteer@^22.8.2
 
 # Copy source files
 COPY . .
