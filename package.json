@@ -1,7 +1,12 @@
 {
   "name": "puppeteer-keep-alive",
   "version": "1.0.0",
+  "description": "Script to keep Streamlit and HuggingFace apps alive",
+  "main": "keep-alive.js",
+  "scripts": {
+    "start": "node keep-alive.js"
+  },
   "dependencies": {
-    "puppeteer": "^19.0.0"
+    "puppeteer": "^21.3.8"
   }
 }
