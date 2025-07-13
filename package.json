@@ -1,7 +1,7 @@
 {
   "name": "puppeteer-keep-alive",
-  "version": "1.0.0",
-  "description": "Script to keep Streamlit and HuggingFace apps alive",
+  "version": "1.1.0",
+  "description": "Keeps Streamlit & HF apps awake",
   "main": "keep-alive.js",
   "scripts": {
     "start": "node keep-alive.js"
