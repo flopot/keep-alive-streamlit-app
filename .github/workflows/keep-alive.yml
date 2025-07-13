@@ -2,17 +2,16 @@ name: Keep Streamlit Apps Awake
 
 on:
   schedule:
-    - cron: '0 * * * *'   # every hour
-  workflow_dispatch:      # manual trigger
+    - cron: '0 * * * *'          # toutes les heures
+  workflow_dispatch:             # bouton “Run workflow”
 
 jobs:
-  keep-alive:
+  wake-apps:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v3
 
-      - name: Build and run Puppeteer script
+      - name: Build and run script in Docker
         run: |
           docker build -t puppeteer-keep-alive .
           docker run --rm puppeteer-keep-alive
